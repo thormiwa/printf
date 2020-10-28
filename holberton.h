@@ -1,6 +1,19 @@
-#ifndef _PRINT_FUNCTION_H_
-#define _PRINT_FUNCTION_H_
+#ifndef _HOLBERTON_
+#define _HOLBERTON_
+
 #include <stdarg.h>
+
+/**
+ * struct printer - A new struct type defining a printer.
+ * @symbol: A symbol representing a data type.
+ * @print: A function pointer to a function that prints
+ *         a data type corresponding to symbol.
+ */
+typedef struct printer
+{
+	char *symbol;
+	void (*print)(va_list arg);
+}
 
 int _printf(const char *format, ...);
 int pull_print(char c, va_list *ap);
