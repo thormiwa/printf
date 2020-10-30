@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_
-#define _HOLBERTON_
+#ifndef _PRINT_FUNCTION_H_
+#define _PRINT_FUNCTION_H_
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
